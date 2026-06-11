@@ -1,0 +1,11 @@
+bday1 = ("January 1st 2010")
+bday2 = ("Febuary 2nd 2009")
+bday3 = ("March 3rd 2008")
+bday4 = ("April 4th 2007")
+bday5 = ("May 5th 2006")
+
+print(bday1)
+print(bday2)
+print(bday3)
+print(bday4)
+print(bday5)
