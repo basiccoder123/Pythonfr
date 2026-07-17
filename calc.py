@@ -8,10 +8,11 @@ def multiply(x, y):
     return x * y
 
 def divide(x, y):
-    if y == 0:
-        raise ValueError("Cannot divide by zero.")
-    return x / y
-
+     if y == 0:
+      raise ValueError
+     print("Cannot be divided by zero")
+     
+    
 print("Select operation:")
 print("1. Add")
 print("2. Subtract")
