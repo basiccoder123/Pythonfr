@@ -2,15 +2,15 @@ import random
 secret = random.randint(1, 50)
 
 def new_range(x, y):
-ch_range = int(input("Chose starting range:"))
-ch_range2 = int(input("Choose max range:"))
-if ch_range >= ch_range2:
-    temp = ch_range
-    ch_range = ch_range2
-    ch_range2 = temp
+    ch_range = int(input("Chose starting range:"))
+    ch_range2 = int(input("Choose max range:"))
+    if ch_range >= ch_range2:
+        temp = ch_range
+        ch_range = ch_range2
+        ch_range2 = temp
 
-print(ch_range)
-print(ch_range2)
+    print(ch_range)
+    print(ch_range2)
 
 
 for invalid in range(1, 5):
