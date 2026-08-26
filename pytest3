@@ -1,0 +1,33 @@
+grades_in_class = {
+    "Kirk": 100,
+    "Ama":  92,
+    "Kofi": 82,
+    "Adwoa": 75,
+    "Olonka": 50,
+}
+
+total = 0
+for mark in grades_in_class.values():
+    total += mark
+
+average = total / len(grades_in_class)
+
+print("The average mark of the class is:", average)
+
+highest_mark = max(grades_in_class.values())
+lowest_mark = min(grades_in_class.values())
+
+for name, score in grades_in_class.items():
+    if score == highest_mark:
+        print(f"The highest mark is {highest_mark}, achieved by {name}.")
+    elif score == lowest_mark:
+        print(f"The lowest mark is {lowest_mark}, achieved by {name}.")
+
+student_name = input("Enter the student's name to check their mark: ")
+student_name = student_name.capitalize()
+
+mark = grades_in_class.get(student_name)
+if mark is not None:
+    print(f"{student_name}'s mark is: {mark}")
+else:
+    print(f"Student {student_name} not found.")
